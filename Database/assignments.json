@@ -1,0 +1,84 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "description": "Propulsion Assignment: Create a sample engine",
+    "dueDate": "2023-11-08",
+    "availableFromDate": "2023-11-01",
+    "availableUntilDate": "2023-11-15"
+},
+{
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "description": "Perform analysis on combustion processes.",
+    "dueDate": "2023-11-15",
+    "availableFromDate": "2023-11-08",
+    "availableUntilDate": "2023-11-22"
+},
+{
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "description": "Design and simulate a rocket nozzle.",
+    "dueDate": "2023-11-22",
+    "availableFromDate": "2023-11-15",
+    "availableUntilDate": "2023-11-29"
+},
+{
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "description": "Test your understanding of aerodynamics.",
+    "dueDate": "2023-11-10",
+    "availableFromDate": "2023-11-03",
+    "availableUntilDate": "2023-11-17"
+},
+{
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "description": "Analyze the flow characteristics of a fluid system.",
+    "dueDate": "2023-11-17",
+    "availableFromDate": "2023-11-10",
+    "availableUntilDate": "2023-11-24"
+},
+{
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "description": "Investigate the heating properties of materials.",
+    "dueDate": "2023-11-24",
+    "availableFromDate": "2023-11-17",
+    "availableUntilDate": "2023-12-01"
+},
+{
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "description": "Design and analyze the structure of a spacecraft component.",
+    "dueDate": "2023-11-12",
+    "availableFromDate": "2023-11-05",
+    "availableUntilDate": "2023-11-19"
+},
+{
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "description": "Perform complex calculations related to orbital mechanics.",
+    "dueDate": "2023-11-19",
+    "availableFromDate": "2023-11-12",
+    "availableUntilDate": "2023-11-26"
+},
+{
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "description": "Test your knowledge of systems engineering principles.",
+    "dueDate": "2023-11-26",
+    "availableFromDate": "2023-11-19",
+    "availableUntilDate": "2023-12-03"
+}
+
+  ]

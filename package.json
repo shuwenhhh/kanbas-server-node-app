@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "kanbas-node-server-app",
+  "version": "1.0.0",
+  "description": "Node.js HTTP Web server for the Kanbas application",
+  "main": "index.js",
+  "scripts": {
+    "test": "git repository: https://github.com/shuwenhhh/kanbas-node-server-app",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuwenhhh/kanbas-node-server-app.git"
+  },
+  "keywords": [
+    "Node",
+    "Rest",
+    "Server",
+    "HTTP"
+  ],
+  "author": "shuwen wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuwenhhh/kanbas-node-server-app/issues"
+  },
+  "homepage": "https://github.com/shuwenhhh/kanbas-node-server-app#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "express.js": "^1.0.0"
+  }
+}

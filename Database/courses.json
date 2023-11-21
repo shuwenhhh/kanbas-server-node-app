@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "RS101",
+    "name": "Rocket Propulsion",
+    "number": "RS4550",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "semester": "202310_1 Fall Semester Full Term"
+  },
+  {
+    "_id": "RS102",
+    "name": "Aerodynamics",
+    "number": "RS4560",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "semester": "202410_2 Fall Semester Full Term"
+  },
+  {
+    "_id": "RS103",
+    "name": "Spacecraft Design",
+    "number": "RS4570",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "semester": "202410_3 Fall Semester Full Term"
+  },
+  {
+    "_id": "RS104",
+    "name": "Organic Chemistry",
+    "number": "RS4558",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "semester": "202310_1 Fall Semester Full Term"
+  },
+  {
+    "_id": "RS105",
+    "name": "Inorganic Chemistry",
+    "number": "RS4568",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "semester": "202410_2 Fall Semester Full Term"
+  },
+  {
+    "_id": "RS106",
+    "name": "Physical Chemistry",
+    "number": "RS4578",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "semester": "202410_3 Fall Semester Full Term"
+  }
+]
