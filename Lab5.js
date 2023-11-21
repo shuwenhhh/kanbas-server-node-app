@@ -15,20 +15,20 @@ const assignment = {
   ];
   
   const Lab5 = (app) => {
-    app.get("/api/a5/welcome", (req, res) => {
+    app.get("/a5/welcome", (req, res) => {
       res.send("Welcome to Assignment 5");
     });
-    app.get("/api/a5/add/:a/:b", (req, res) => {
+    app.get("/a5/add/:a/:b", (req, res) => {
       const { a, b } = req.params;
       const sum = parseInt(a) + parseInt(b);
       res.send(sum.toString());
     });
-    app.get("/api/a5/subtract/:a/:b", (req, res) => {
+    app.get("/a5/subtract/:a/:b", (req, res) => {
       const { a, b } = req.params;
       const sum = parseInt(a) - parseInt(b);
       res.send(sum.toString());
     });
-    app.get("/api/a5/calculator", (req, res) => {
+    app.get("/a5/calculator", (req, res) => {
       const { a, b, operation } = req.query;
       let result = 0;
       switch (operation) {
@@ -44,32 +44,32 @@ const assignment = {
       res.send(result.toString());
     });
   
-    app.get("/api/a5/assignment", (req, res) => {
+    app.get("/a5/assignment", (req, res) => {
       res.json(assignment);
     });
-    app.get("/api/a5/assignment/title", (req, res) => {
+    app.get("/a5/assignment/title", (req, res) => {
       res.json(assignment.title);
     });
-    app.get("/api/a5/assignment/title/:newTitle", (req, res) => {
+    app.get("/a5/assignment/title/:newTitle", (req, res) => {
       const { newTitle } = req.params;
       assignment.title = newTitle;
       res.json(assignment);
     });
-    app.get("/api/a5/assignment/score/:newScore", (req, res) => {
+    app.get("/a5/assignment/score/:newScore", (req, res) => {
       const { newScore } = req.params;
       assignment.score = parseInt(newScore);
       res.json(assignment);
     });
-    app.get("/api/a5/assignment/completed/:newCompleted", (req, res) => {
+    app.get("/a5/assignment/completed/:newCompleted", (req, res) => {
       const { newCompleted } = req.params;
       assignment.completed = newCompleted === "true";
       res.json(assignment);
     });
-    app.get("/api/a5/todos", (req, res) => {
+    app.get("/a5/todos", (req, res) => {
       res.json(todos);
     });
   
-    app.post("/api/a5/todos", (req, res) => {
+    app.post("/a5/todos", (req, res) => {
       const newTodo = {
         ...req.body,
         id: new Date().getTime(),
@@ -77,7 +77,7 @@ const assignment = {
       todos.push(newTodo);
       res.json(newTodo);
     });
-    app.delete("/api/a5/todos/:id", (req, res) => {
+    app.delete("/a5/todos/:id", (req, res) => {
         const { id } = req.params;
         const todo = todos.find((t) => t.id === parseInt(id));
         if (!todo) {
@@ -89,7 +89,7 @@ const assignment = {
         todos.splice(todos.indexOf(todo), 1);
         res.sendStatus(200);
       });
-      app.put("/api/a5/todos/:id", (req, res) => {
+      app.put("/a5/todos/:id", (req, res) => {
         const { id } = req.params;
         const todo = todos.find((t) => t.id === parseInt(id));
         if (!todo) {
@@ -109,7 +109,7 @@ const assignment = {
   
   
   
-    app.get("/api/a5/todos/create", (req, res) => {
+    app.get("/a5/todos/create", (req, res) => {
       const newTodo = {
         id: new Date().getTime(),
         title: "New Task",
@@ -119,11 +119,11 @@ const assignment = {
       res.json(todos);
     });
   
-    app.get("/api/a5/todos/:id", (req, res) => {
+    app.get("/a5/todos/:id", (req, res) => {
       const { id } = req.params;
       res.json(todos.filter((todo) => todo.id === parseInt(id)));
     });
-    app.get("/api/a5/todos/completed", (req, res) => {
+    app.get("/a5/todos/completed", (req, res) => {
       const { completed } = req.query;
       console.log("completed")
       console.log(completed)
@@ -136,13 +136,13 @@ const assignment = {
       }
       res.json(todos);
     });
-    app.get("/api/a5/todos/:id/delete", (req, res) => {
+    app.get("/a5/todos/:id/delete", (req, res) => {
       const { id } = req.params;
       const todo = todos.find((t) => t.id === parseInt(id));
       todos.splice(todos.indexOf(todo), 1);
       res.json(todos);
     });
-    app.get("/api/a5/todos/:id/title/:title", (req, res) => {
+    app.get("/a5/todos/:id/title/:title", (req, res) => {
       const { id, title } = req.params;
       const todo = todos.find((t) => t.id === parseInt(id));
       todo.title = title;
