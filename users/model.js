@@ -1,9 +1,11 @@
 import mongoose from "mongoose";
 import schema from "./schema.js";
 
+const PROD_URI = 'mongodb+srv://giuseppi:supersecretpassword@cluster0.eerap.mongodb.net/kanbas?retryWrites=true&w=majority'
+
 export const connectDb = () => {
     try {
-        const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
+        const CONNECTION_STRING = process.env.DB_URL || PROD_URI;
         console.log(CONNECTION_STRING);
         mongoose.connect(CONNECTION_STRING);
     } catch (error) {
