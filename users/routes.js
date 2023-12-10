@@ -60,6 +60,7 @@ function UserRoutes(app) {
         res.json(status);
     };
     const signup = async (req, res) => {
+        console.log(req)
         if (isNullorEmpty(req.body.username)) {
             res.status(400).json(
                 { message: "Please enter username" });

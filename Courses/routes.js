@@ -33,8 +33,6 @@ function CourseRoutes(app) {
           _id: new Date().getTime().toString() };
         Database.courses.push(course);
         res.send(course);
-        
-        
       });
     
   app.get("/courses", (req, res) => {
